@@ -41,7 +41,7 @@ def login_and_fill_form(accessid, password, phone_num, phone_provider):
     br.set_handle_robots(False)
     br.set_handle_refresh(False)
     br.addheaders = [('User-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36')]
-    link = "https://forms.wayne.edu/covid-19-screening"    
+    link = "https://forms.wayne.edu/covid-19-screening"
     br.open(link)
     br.select_form(nr=1)
     br.form[ 'accessid' ] = accessid
