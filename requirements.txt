@@ -1,4 +1,4 @@
+beautifulsoup4==4.9.3
 etext==0.0.1
 mechanize==0.4.7
 requests==2.26.0
-beautifulsoup4==4.9.3
