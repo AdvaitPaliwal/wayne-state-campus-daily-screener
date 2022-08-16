@@ -1,8 +1,10 @@
 import re
-from bs4 import BeautifulSoup
+import time
+import datetime
 import mechanize
 import requests
 from mms import send_mms
+from bs4 import BeautifulSoup
 
 def check_variables(accessid, phone_num, phone_provider):
     check_accessid = bool(re.match("[A-Za-z]{2}\\d{4}\\Z", accessid))
@@ -17,9 +19,24 @@ def check_variables(accessid, phone_num, phone_provider):
         print("Your phone provider is incorrect.")
     return check_accessid and check_phone_num and check_phone_provider
 
+def sleep():
+    today = datetime.datetime.now()
+    sleep_time = (
+        datetime.datetime(
+            today.year,
+            today.month,
+            today.day,
+            0,
+            0,
+            0) -
+        today).seconds
+    print(f"Waiting for {datetime.timedelta(seconds=sleep_time)}")
+    time.sleep()
+
 def login_and_fill_form(accessid, password, phone_num, phone_provider):
     if not check_variables(accessid, phone_num, phone_provider):
         return
+    sleep()
     br = mechanize.Browser()
     br.set_handle_robots(False)
     br.set_handle_refresh(False)
