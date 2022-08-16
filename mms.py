@@ -2,13 +2,16 @@ from etext import *
 from etext.providers import PROVIDERS
 import os
 
-text_email = os.environ["text_email"]
-text_password = os.environ["text_password"]
+try:
+    text_email = os.environ["text_email"]
+    text_password = os.environ["text_password"]
+except KeyError as k:
+    print(f"The variable {k} is missing.")
+else:
+    sender_credentials = (text_email, text_password)
 
 mime_maintype = "image"
 mime_subtype = "png"
-
-sender_credentials = (text_email, text_password)
 
 def send_mms(phone_number, message, file_path, subject, provider):
     if provider == "Other":

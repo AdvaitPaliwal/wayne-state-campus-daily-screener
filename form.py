@@ -2,7 +2,7 @@ import re
 from bs4 import BeautifulSoup
 import mechanize
 import requests
-from text import send_mms
+from mms import send_mms
 
 def check_variables(accessid, phone_num, phone_provider):
     check_accessid = bool(re.match("[A-Za-z]{2}\\d{4}\\Z", accessid))
