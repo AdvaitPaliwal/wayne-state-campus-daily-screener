@@ -31,7 +31,7 @@ def sleep():
             0) -
         today).seconds
     print(f"Waiting for {datetime.timedelta(seconds=sleep_time)}")
-    time.sleep(sleep_time)
+    time.sleep(20)
 
 def login_and_fill_form(accessid, password, phone_num, phone_provider):
     if not check_variables(accessid, phone_num, phone_provider):
