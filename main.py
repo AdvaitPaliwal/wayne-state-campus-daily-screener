@@ -5,7 +5,7 @@ from mechanize import ControlNotFoundError
 try:
     accessid = os.environ["accessid"]
     password = os.environ["password"]
-    phone_num = os.environ["phone"]
+    phone_num = os.environ["phone_num"]
     phone_provider = os.environ["phone_provider"]
 except KeyError as k:
     print(f"The variable {k} is missing.")
