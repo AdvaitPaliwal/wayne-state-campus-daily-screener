@@ -5,13 +5,11 @@ import os
 try:
     text_email = os.environ["text_email"]
     text_password = os.environ["text_password"]
+    sender_credentials = (text_email, text_password)
+    mime_maintype = "image"
+    mime_subtype = "png"
 except KeyError as k:
     print(f"The variable {k} is missing.")
-else:
-    sender_credentials = (text_email, text_password)
-
-mime_maintype = "image"
-mime_subtype = "png"
 
 
 def send_mms(phone_number, message, file_path, subject, provider):
