@@ -1,5 +1,4 @@
 <p align="center">
-    <br>
     <img src="https://user-images.githubusercontent.com/66044327/186356762-69bf20ce-1aa1-43fc-86e0-128f29bf4c0b.png" width="715"/>
     <br>
 <p>
@@ -8,7 +7,7 @@
 
 ## Note
 
-**The program selects `No` for the last three questions. Do not use it if your responses vary. I will not be held responsible for your inaccuracies.**
+The program selects `No` for the last three questions. Do not use it if your responses vary. I will not be held responsible for your inaccuracies.
 
 <p>
 <img width="759" src="https://user-images.githubusercontent.com/66044327/185913984-6ca00068-9a7b-406c-9078-7028297f4907.png">
@@ -54,6 +53,8 @@ Navigate to your app settings in Heroku, click `Reveal Config Vars` and input th
 - `phone_num` The phone number that will receive the texts
 - `phone_provider` - Your phone provider from the [list](https://github.com/AdvaitPaliwal/wayne-state-campus-daily-screener/blob/main/phone_providers.txt)
 - `TZ` - A timezone selection from the [database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) under `TZ database name`
+
+All config vars are stored in an encrypted form as they are designed to contain sensitive information.
 
 ## Deploying the app
 
