@@ -7,7 +7,7 @@
 
 ## Note
 
-The program selects `No` for the last three questions. Do not use it if your responses vary. I will not be held responsible for your inaccuracies.
+The program selects `No` for the last three questions. Do not use it if your responses vary. I am not liable for your inaccuracies.
 
 <p>
 <img width="759" src="https://user-images.githubusercontent.com/66044327/185913984-6ca00068-9a7b-406c-9078-7028297f4907.png">
