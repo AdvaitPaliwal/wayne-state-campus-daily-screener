@@ -51,7 +51,7 @@ Navigate to your app settings in Heroku, click `Reveal Config Vars` and input th
 - `accessid` - Your Wayne State access id
 - `password` - Your Wayne State password
 - `phone_num` The phone number that will receive the texts
-- `phone_provider` - Your phone provider from [phone_providers.txt](https://github.com/AdvaitPaliwal/wayne-state-campus-daily-screener/blob/main/phone_providers.txt)
+- `phone_provider` - Your phone provider verbatim from [phone_providers.txt](https://github.com/AdvaitPaliwal/wayne-state-campus-daily-screener/blob/main/phone_providers.txt)
 - `TZ` - A timezone selection from the [database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) under `TZ database name`
 
 All config vars are stored in an encrypted form as they are designed to contain sensitive information.
